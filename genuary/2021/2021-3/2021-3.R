@@ -29,8 +29,6 @@ img_df <- as.data.frame.table(img_array) %>%
   `colnames<-`(c("y", "x", "b")) %>% 
   mutate(
     across(everything(), as.numeric),
-    # convert b (0-255) to bf (1-0), so that "brighter" values become smaller points
-    bf = 1 - b / 255,
     n = row_number()
   ) %>%
    filter(n %% 2 == 0)
