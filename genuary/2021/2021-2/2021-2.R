@@ -1,7 +1,7 @@
 library(tidyverse)
 library(ggforce)
 
-rule30 <- read_csv(here::here("genuary", "2021", "data", "rule30.csv"), col_names = FALSE)
+rule30 <- read_csv(here::here("genuary", "2021", "2021-2", "data", "rule30.csv"), col_names = FALSE)
 
 rule30_xy <- rule30 %>% 
   mutate(y = row_number()) %>% 
@@ -24,5 +24,5 @@ ggplot(rule30_xy) +
     plot.background = element_rect(fill = "grey10", color = NA),
     plot.margin = margin(2, 2, 2, 2)
   ) +
-  ggsave(here::here("genuary", "2021", "2021-2.png"), dpi = 320, width = 7, height = 3.7)
+  ggsave(here::here("genuary", "2021", "2021-2", "2021-2.png"), dpi = 320, width = 7, height = 3.7)
 
