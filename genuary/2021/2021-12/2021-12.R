@@ -43,4 +43,4 @@ ggplot(results_sample, aes(x = x, y = y,
     strip.text = element_blank(),
     panel.spacing = unit(0, "points")
     ) +
-  ggsave(here::here("genuary", "2021", "2021-11", "2021-11.png"), dpi = 320, height = 7, width = 9)
+  ggsave(here::here("genuary", "2021", "2021-12", "2021-12.png"), dpi = 320, height = 7, width = 9)
