@@ -17,8 +17,8 @@ wav_df <- data.frame(left = wav@left, right = wav@right) %>%
     ) 
 
 p <- ggplot(wav_df, aes(right, left)) +
-  geom_path(alpha = 0.2) +
-  geom_point(size = 0.2, alpha = 0.1) +
+  geom_path(alpha = 0.4) +
+  geom_point(size = 0.5, alpha = 0.3) +
   scale_x_continuous(limits = c(-7000, 7000)) +
   scale_y_continuous(limits = c(-7000, 7000)) +
   coord_fixed(expand = FALSE, clip = "off") +
