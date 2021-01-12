@@ -3,7 +3,8 @@ library(janitor)
 library(tidyverse)
 library(ggfittext)
 
-results_json <- fromJSON("http://openlibrary.org/search.json?subject=art")
+# results_json <- fromJSON("http://openlibrary.org/search.json?subject=art")
+results_json <- fromJSON("http://openlibrary.org/search.json?subject=music")
 
 n_max = 64
 
@@ -15,7 +16,7 @@ results_sample <- results_json %>%
   mutate(
     n = row_number(),
     color = if_else(!is.na(docs_cover_i),
-                   str_pad(paste0("#", str_sub(docs_cover_i, end = -1)), 9, "right", pad = 0),
+                   str_pad(paste0("#", str_sub(abs(docs_cover_i), end = -1)), 9, "right", pad = 0),
                    "grey50")
     ) %>% 
   rowwise() %>% 
