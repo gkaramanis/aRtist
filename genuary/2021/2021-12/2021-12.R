@@ -3,8 +3,8 @@ library(janitor)
 library(tidyverse)
 library(ggfittext)
 
-# results_json <- fromJSON("http://openlibrary.org/search.json?subject=art")
-results_json <- fromJSON("http://openlibrary.org/search.json?subject=music")
+results_json <- fromJSON("http://openlibrary.org/search.json?subject=art")
+# results_json <- fromJSON("http://openlibrary.org/search.json?subject=music")
 
 n_max = 64
 
