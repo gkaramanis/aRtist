@@ -10,6 +10,7 @@ n_max = 64
 results_sample <- results_json %>% 
   as.data.frame() %>% 
   clean_names() %>% 
+  filter(!is.na(docs_cover_i)) %>% 
   sample_n(n_max) %>% 
   mutate(
     n = row_number(),
@@ -19,10 +20,10 @@ results_sample <- results_json %>%
     ) %>% 
   rowwise() %>% 
   mutate(
-    family = sample(c("Canela", "Graphik", "Graphik Light", "Produkt", "Produkt Medium", "Quotes Caps", "Courier", "Futura Medium"), 1)
+    family = sample(c("Canela", "Graphik", "Graphik Light", "Produkt", "Produkt Medium", "Quotes Caps", "Courier", "Futura Medium", "Diamante Bold", "FinkHeavy Medium"), 1)
     ) %>% 
   ungroup() %>% 
-  select(n, docs_title, family, color, hjust, vjust, size) %>% 
+  select(n, docs_title, family, color) %>% 
   mutate(
     x = rep(1:sqrt(n_max), sqrt(n_max)),
     y = rep(1:sqrt(n_max), each = sqrt(n_max))
