@@ -1,8 +1,11 @@
 library(ggplot2)
 library(dplyr)
 library(binaryLogic)
-library(ggforce)
 
+# Prime parallelograms:
+# http://gus-massa.blogspot.com/2019/09/more-on-prime-parallelograms.html
+
+# rimeest function from:
 # https://stackoverflow.com/questions/3789968/generate-a-list-of-primes-up-to-a-certain-number
 
 primest <- function(n){
