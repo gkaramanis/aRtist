@@ -15,6 +15,8 @@ Making art with R
 	<a href="genuary"><img src="genuary/2021/2021-1/2021-1.png"></a>
 	<a href="genuary"><img src="genuary/2021/2021-18/2021-18.png"></a>
 	<a href="genuary"><img src="genuary/2021/2021-3/2021-3.png"></a>
+	</div>
+    <div class="column">
 	<a href="portraits"><img src="portraits/portraits split-bar/plots/keanu.png"></a>
 	<a href="genuary"><img src="genuary/2021/2021-10/2021-10.png"></a>
 	<a href="genuary"><img src="genuary/2021/2021-10/2021-10b.png"></a>
