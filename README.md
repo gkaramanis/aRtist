@@ -9,9 +9,6 @@ Making art with R
   	<a href="flow"><img src="flow/gallery/blob-20200320_152823.png"></a>
 	<a href="flow"><img src="flow/gallery/flow-blueseaweed.png"></a>
 	<a href="genuary"><img src="genuary/2021/2021-8/2021-8.png"></a>
-  	<a href="portraits"><img src="2020-week08/plots/food-consumption.png"></a>
-  	<a href="portraits"><img src="2020-week07/plots/hotels-rooms.png"></a>
-  	<a href="portraits"><img src="2020-week03/plots/passwords-bsplines.png"></a>
 	<a href="genuary"><img src="genuary/2021/2021-1/2021-1.png"></a>
 	<a href="genuary"><img src="genuary/2021/2021-18/2021-18.png"></a>
 	<a href="genuary"><img src="genuary/2021/2021-3/2021-3.png"></a>
