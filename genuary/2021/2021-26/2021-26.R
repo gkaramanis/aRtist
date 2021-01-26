@@ -23,7 +23,7 @@ objs <- obj_list %>% reduce(rbind)
 ggplot(objs) +
   geom_polygon(aes(x + 4 * n %% b, y + 4 * n %/% b, group = interaction(n, zorder), fill =  0.45 * fnx + fny), color = "grey20") +
   scale_fill_distiller(palette = "YlGnBu") +
-  coord_fixed(expand = FALSE) +
+  coord_cartesian(expand = FALSE, clip = "off") +
   # facet_wrap(vars(n)) +
   theme_void() +
   theme(
@@ -31,5 +31,5 @@ ggplot(objs) +
     plot.background = element_rect(fill = "#8c7d70", color = NA),
     plot.margin = margin(20, 20, 20, 20)
   ) +
-  ggsave(here::here("genuary", "2021", "2021-26", "2021-26.png"), dpi = 320, width = 6.55, height = 7)
+  ggsave(here::here("genuary", "2021", "2021-26", "2021-26.png"), dpi = 320, width = 6.555, height = 7)
                
