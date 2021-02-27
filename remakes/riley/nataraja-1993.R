@@ -21,7 +21,7 @@ pal <- c(
   "#C2644F", # dark orange
   "#A24D50", # brown
   "#DFA45B", # ochre
-  "#E8C19A", # light ochre
+  "#E8DCB0", # light ochre
   "#4167A5", # dark blue
   "#639ED5", # light blue
   "#ABC0E2", # very light blue
