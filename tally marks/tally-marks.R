@@ -1,5 +1,4 @@
 library(tidyverse)
-library(ambient)
 
 v_lines <- expand.grid(r = 1:8, c = 1:8) %>% 
   mutate(n = row_number()) %>% 
