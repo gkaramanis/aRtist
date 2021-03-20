@@ -1,4 +1,3 @@
-# aRtist
 An R script to make a collage of two images.
 
 
