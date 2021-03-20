@@ -25,4 +25,3 @@ ggplot(waves) +
     legend.position = "none"
     ) +
   ggsave(here::here("waves", "waves.png"), dpi = 320, width = 5, height = 5)
-
