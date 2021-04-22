@@ -50,19 +50,20 @@ img_df <- rbind(img_df_r, img_df_g, img_df_b) %>%
   `colnames<-`(c("y", "x", "c", "v")) %>% 
   distinct(x, y, c, v) %>% 
   mutate(
-    across(c(x, y, v), as.numeric),
+    across(c(x, y, c), as.numeric),
+    
     # map v (0-255) to vf (0-1), in order to use for alpha
-    vf = v / 255,
+    vf = c / 255,
     # offset for "pixels"
     x = case_when(
-      c == "green" ~ x + 0.3,
-      c == "blue" ~ x + 0.6,
+      v == "green" ~ x + 0.3,
+      v == "blue" ~ x + 0.6,
       TRUE ~ x
     )
   )
 
 ggplot(img_df) +
-  geom_rect(aes(xmin = x, xmax = x + 0.3, ymin = y, ymax = y + 0.9, fill = c, alpha = vf), color = NA) +
+  geom_rect(aes(xmin = x, xmax = x + 0.3, ymin = y, ymax = y + 0.9, fill = v, alpha = vf), color = NA) +
   scale_y_reverse() +
   scale_fill_identity() +
   scale_alpha_identity() +
