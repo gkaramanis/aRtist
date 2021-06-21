@@ -54,5 +54,6 @@ ggplot(arcs) +
   scale_y_reverse() +
   scale_size_identity() +
   coord_fixed() +
-  theme_void() +
-  ggsave(paste0("portraits/portraits arcs/plots/", img_name, ".png"))
+  theme_void() 
+
+ggsave(paste0("portraits/portraits arcs/plots/", img_name, ".png"))

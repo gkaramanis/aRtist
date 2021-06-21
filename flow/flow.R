@@ -62,8 +62,9 @@ ggplot(dat_df) +
   theme(
     legend.position = "none",
     plot.background = element_rect(fill = "black")
-  ) +
-  ggsave(here::here("flow", "plots", paste0("flow-", format(Sys.time(), "%Y%m%d_%H%M%S"), ".png")), dpi = 320, width = 7, height = 7)
+  ) 
+
+ggsave(here::here("flow", "plots", paste0("flow-", format(Sys.time(), "%Y%m%d_%H%M%S"), ".png")), dpi = 320, width = 7, height = 7)
 
 # Create data frame from settings
 settings <- data.frame(nx, ny,

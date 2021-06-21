@@ -38,6 +38,7 @@ ggplot(prime_df) +
   theme(
     plot.background = element_rect(fill = "grey57", color = NA),
     legend.position = "none"
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-13", "2021-13.png"), dpi = 320, width = 7, height = 7)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-13", "2021-13.png"), dpi = 320, width = 7, height = 7)
 

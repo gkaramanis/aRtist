@@ -23,5 +23,6 @@ ggplot(waves) +
   theme_void() +
   theme(
     legend.position = "none"
-    ) +
-  ggsave(here::here("waves", "waves.png"), dpi = 320, width = 5, height = 5)
+    ) 
+
+ggsave(here::here("waves", "waves.png"), dpi = 320, width = 5, height = 5)

@@ -15,6 +15,7 @@ ggplot(centroids, aes(longitude, latitude)) +
   geom_delaunay_segment(color = "black") +
   coord_fixed() +
   theme_void() +
-  theme(legend.position = "none") +
-  ggsave(here::here("genuary", "2021", "2021-20", "2021-20.png"), dpi = 320)
+  theme(legend.position = "none") 
+
+ggsave(here::here("genuary", "2021", "2021-20", "2021-20.png"), dpi = 320)
 

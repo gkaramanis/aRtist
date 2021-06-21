@@ -20,6 +20,7 @@ ggplot(fun_df) +
   theme(
     legend.position = "none",
     plot.background = element_rect(fill = "grey15", color = NA)
-    ) +
-  ggsave(here::here("genuary", "2021", "2021-18", "2021-18.png"), dpi = 320, width = 10, height = 7)
+    ) 
+
+ggsave(here::here("genuary", "2021", "2021-18", "2021-18.png"), dpi = 320, width = 10, height = 7)
   

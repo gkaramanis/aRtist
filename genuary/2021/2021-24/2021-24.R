@@ -27,6 +27,7 @@ ggplot(lns) +
   theme(
     legend.position = "none",
     plot.background = element_rect(fill = "grey20", color = NA)
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-24", "2021-24.png"), dpi = 320, width = 7, height = 7)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-24", "2021-24.png"), dpi = 320, width = 7, height = 7)
 

@@ -46,5 +46,6 @@ ggplot(img_df) +
   # scale_size_continuous(range = c(0, 1)) +
   coord_fixed(expand = FALSE) +
   theme_void() +
-  theme(legend.position = "none", plot.background = element_rect(fill = col_bg, color = NA)) +
-  ggsave(paste0("portraits/portraits spoke/plots/", img_name, "-spoke.png"), width = 8, height = 8 / img_ratio)
+  theme(legend.position = "none", plot.background = element_rect(fill = col_bg, color = NA)) 
+
+ggsave(paste0("portraits/portraits spoke/plots/", img_name, "-spoke.png"), width = 8, height = 8 / img_ratio)

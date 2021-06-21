@@ -26,7 +26,8 @@ ggplot(voro, aes(x, y)) +
   theme(
     legend.position = "none",
     plot.background = element_rect(fill = "grey10", color = NA)
-    ) +
-  ggsave(here::here("voronoi", "plots", paste0("voronoi-", format(Sys.time(), "%Y%m%d_%H%M%S"), ".png")), dpi = 320,
+    ) 
+
+ggsave(here::here("voronoi", "plots", paste0("voronoi-", format(Sys.time(), "%Y%m%d_%H%M%S"), ".png")), dpi = 320,
          width = 7, height = 6.105)
 

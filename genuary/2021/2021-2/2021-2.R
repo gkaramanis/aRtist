@@ -23,6 +23,7 @@ ggplot(rule30_xy) +
     legend.position = "none",
     plot.background = element_rect(fill = "grey10", color = NA),
     plot.margin = margin(2, 2, 2, 2)
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-2", "2021-2.png"), dpi = 320, width = 7, height = 3.7)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-2", "2021-2.png"), dpi = 320, width = 7, height = 3.7)
 

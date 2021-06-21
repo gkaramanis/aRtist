@@ -19,5 +19,6 @@ ggplot(centroids) +
   theme(
     legend.position = "none",
     plot.background = element_rect(fill = "grey25", color = NA)
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-20", "2021-20.png"), dpi = 320, height = 5.4, width = 9)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-20", "2021-20.png"), dpi = 320, height = 5.4, width = 9)

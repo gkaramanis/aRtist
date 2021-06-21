@@ -51,8 +51,9 @@ ggplot(img_df) +
 	geom_text(aes(x, y, label = c), family = "Courier Bold", size = max(img_df$y)/20) +
 	scale_y_reverse() +
 	coord_fixed() +
-	theme_void() +
-	ggsave(paste0("portraits/portraits ascii-art/plots/", img_name, "-ascii.png"), width = 8, height = 8 / img_ratio)
+	theme_void() 
+
+ggsave(paste0("portraits/portraits ascii-art/plots/", img_name, "-ascii.png"), width = 8, height = 8 / img_ratio)
 
 # Find width of output
 w <- max(img_df$x)

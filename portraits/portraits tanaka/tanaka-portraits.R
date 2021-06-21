@@ -43,5 +43,6 @@ ggplot(img_df) +
   coord_fixed() +
   scale_fill_brewer(guide = "none") +
   theme_void() +
-  theme(plot.background = element_rect(fill = "black", color = NA)) +
-	ggsave(paste0("portraits/portraits tanaka/plots/", img_name, "-tanaka.png"), width = 8, height = 8 / img_ratio)
+  theme(plot.background = element_rect(fill = "black", color = NA)) 
+
+ggsave(paste0("portraits/portraits tanaka/plots/", img_name, "-tanaka.png"), width = 8, height = 8 / img_ratio)

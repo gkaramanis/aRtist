@@ -14,6 +14,7 @@ ggplot(xs) +
   theme_void() +
   theme(
     legend.position = "none"
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-27", "2021-27.png"), dpi = 320, width = 7, height = 7)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-27", "2021-27.png"), dpi = 320, width = 7, height = 7)
 

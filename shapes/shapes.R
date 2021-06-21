@@ -23,5 +23,6 @@ ggplot(grid_points) +
   theme(
     legend.position = "none",
     plot.background = element_rect(fill = "white", colour = NA)
-  ) +
-  ggsave(here::here("shapes", "plots", "shapes.png"), dpi = 320, width = 8, height = 6) 
+  ) 
+
+ggsave(here::here("shapes", "plots", "shapes.png"), dpi = 320, width = 8, height = 6) 

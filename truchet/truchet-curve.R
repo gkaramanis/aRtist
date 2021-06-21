@@ -27,5 +27,6 @@ ggplot(tiles) +
   theme_void() +
   theme(
     plot.background = element_rect(fill = "purple", color = NA)
-  ) +
-  ggsave(here::here("truchet", "plots", "truchet-curve.png"), dpi = 320, height = 8, width = 8)
+  ) 
+
+ggsave(here::here("truchet", "plots", "truchet-curve.png"), dpi = 320, height = 8, width = 8)

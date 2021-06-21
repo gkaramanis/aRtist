@@ -42,6 +42,7 @@ ggplot() +
     legend.position = "none",
     plot.title = element_text(size = 30, family = "Humor Sans", hjust  = 0.5),
     plot.margin = margin(20, 0, 0, 0)
-    ) +
-  ggsave(here::here("tally marks", "tally-marks.png"), dpi = 320, height = 8, width = 6.5)
+    ) 
+
+ggsave(here::here("tally marks", "tally-marks.png"), dpi = 320, height = 8, width = 6.5)
 

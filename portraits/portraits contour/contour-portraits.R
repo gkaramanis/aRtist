@@ -62,5 +62,6 @@ ggplot(img_df) +
   coord_fixed(expand = FALSE) +
   theme_void() +
   theme(legend.position = "none",
-        plot.background = element_rect(fill = "black", color = NA)) +
-  ggsave("portraits/portraits contour/plots/audrey-contour.png", dpi = 320, height = 8, width = 6)
+        plot.background = element_rect(fill = "black", color = NA)) 
+
+ggsave("portraits/portraits contour/plots/audrey-contour.png", dpi = 320, height = 8, width = 6)

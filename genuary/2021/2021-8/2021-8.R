@@ -63,6 +63,7 @@ ggplot(dat_df) +
   theme(
     legend.position = "none",
     plot.background = element_rect(fill = col2)
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-8", "2021-8.png"), dpi = 320, width = 7, height = 7)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-8", "2021-8.png"), dpi = 320, width = 7, height = 7)
   

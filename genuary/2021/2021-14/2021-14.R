@@ -36,5 +36,6 @@ ggplot(pnts, aes(x, y)) +
     legend.position = "none",
     plot.background = element_rect(fill = "grey90", color = NA),
     plot.margin = margin(10, 10, 10, 10)
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-14", paste0("2021-14-", s, ".png")), dpi = 320, width = 7, height = 7 / a)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-14", paste0("2021-14-", s, ".png")), dpi = 320, width = 7, height = 7 / a)

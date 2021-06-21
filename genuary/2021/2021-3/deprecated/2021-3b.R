@@ -23,6 +23,7 @@ faces %>%
   geom_point(aes(x = x - 0.2, y = y + 0.1), size = 0.4) +
   geom_point(aes(x = x + 0.2, y = y + 0.1), size = 0.4) +
   coord_fixed() +
-  theme_void() +
-  ggsave(here::here("genuary", "2021", "2021-3b.png"), dpi = 320, width = 7, height = 3.7)
+  theme_void() 
+
+ggsave(here::here("genuary", "2021", "2021-3b.png"), dpi = 320, width = 7, height = 3.7)
 

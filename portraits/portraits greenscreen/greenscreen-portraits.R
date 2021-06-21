@@ -40,5 +40,6 @@ ggplot(img_df) +
   scale_y_reverse() +
   coord_fixed(expand = FALSE) +
   theme_void() +
-  theme(plot.background = element_rect(fill = "green", color = NA))  +
-  ggsave(paste0("portraits/portraits greenscreen/plots/", img_name, "-green-v.png"), width = 8, height = 8 / img_ratio)
+  theme(plot.background = element_rect(fill = "green", color = NA))  
+
+ggsave(paste0("portraits/portraits greenscreen/plots/", img_name, "-green-v.png"), width = 8, height = 8 / img_ratio)

@@ -24,6 +24,7 @@ ggplot(fall) +
   theme_void() +
   theme(
     legend.position = "none"
-  ) +
-  ggsave(here::here("remakes", "riley", "fall-1963.png"), dpi = 320, width = 5, height = 5)
+  ) 
+
+ggsave(here::here("remakes", "riley", "fall-1963.png"), dpi = 320, width = 5, height = 5)
 

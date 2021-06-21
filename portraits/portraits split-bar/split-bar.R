@@ -40,5 +40,6 @@ ggplot(img_df) +
   scale_y_reverse() +
   coord_fixed(expand = FALSE) +
   theme_void() +
-  theme(legend.position = "none", plot.background = element_rect(fill = col_bg, color = NA)) +
-	ggsave("portraits/portraits split-bar/plots/keanu.png")
+  theme(legend.position = "none", plot.background = element_rect(fill = col_bg, color = NA)) 
+
+ggsave("portraits/portraits split-bar/plots/keanu.png")

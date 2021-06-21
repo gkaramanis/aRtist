@@ -27,6 +27,7 @@ ggplot(prmtns) +
 		legend.position = "none",
 		plot.background = element_rect(fill = "grey97", color = NA),
 		plot.margin = margin(20, 20, 20, 20)
-	) +
-  ggsave(here::here("genuary", "2021", "2021-25", "2021-25.png"), dpi = 320, height = 7, width = 4.675)
+	) 
+
+ggsave(here::here("genuary", "2021", "2021-25", "2021-25.png"), dpi = 320, height = 7, width = 4.675)
 

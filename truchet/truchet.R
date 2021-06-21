@@ -24,5 +24,6 @@ tiles <- data.frame(
 ggplot(tiles) +
   geom_polygon(aes(col + x, row + y, group = interaction(col, row)), fill = "grey20", color = "grey20") +
   coord_fixed() +
-  theme_void() +
-  ggsave(here::here("truchet", "plots", "truchet.png"), dpi = 320, height = 8, width = 8)
+  theme_void() 
+
+ggsave(here::here("truchet", "plots", "truchet.png"), dpi = 320, height = 8, width = 8)

@@ -48,5 +48,6 @@ ggplot(img_df) +
   theme(
     legend.position = "none",
     plot.background = element_rect(fill = "grey97", color = NA)
-    ) +
-  ggsave(paste0("portraits/portraits voronoi/plots/", img_name, "-voronoi-", threshold, ".png"), width = 8, height = 8 / img_ratio)
+    ) 
+
+ggsave(paste0("portraits/portraits voronoi/plots/", img_name, "-voronoi-", threshold, ".png"), width = 8, height = 8 / img_ratio)

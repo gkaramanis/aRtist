@@ -12,5 +12,6 @@ ggplot(tree) +
   coord_fixed(expand = FALSE) +
   theme(
     legend.position = "none"
-        ) +
-  ggsave(here::here("genuary", "2021", "2021-10", "2021-10.png"), dpi = 320, width = 7, height = 7)
+        ) 
+
+ggsave(here::here("genuary", "2021", "2021-10", "2021-10.png"), dpi = 320, width = 7, height = 7)

@@ -27,6 +27,7 @@ ggplot(sq) +
     legend.position = "none",
     plot.background = element_rect(fill = "midnightblue", color = NA)
   ) +
-  # ggsave(here::here("iris", "plots", paste0("iris-", format(Sys.time(), "%Y%m%d_%H%M%S"), ".png")), dpi = 320, height = 8, width = 8) +
-  ggsave(here::here("iris", "plots", "iris.png"), dpi = 320, height = 8, width = 8)
+  # ggsave(here::here("iris", "plots", paste0("iris-", format(Sys.time(), "%Y%m%d_%H%M%S"), ".png")), dpi = 320, height = 8, width = 8) 
+
+ggsave(here::here("iris", "plots", "iris.png"), dpi = 320, height = 8, width = 8)
 

@@ -71,5 +71,6 @@ ggplot(img_df) +
   coord_cartesian(expand = FALSE) +
   theme_void() +
   theme(legend.position = "none",
-        plot.background = element_rect(fill = "black", color = NA)) +
-  ggsave("portraits/portraits rgb/plots/keanu-rgb-link.png", width = 5, height = 5 / img_ratio)
+        plot.background = element_rect(fill = "black", color = NA)) 
+
+ggsave("portraits/portraits rgb/plots/keanu-rgb-link.png", width = 5, height = 5 / img_ratio)

@@ -16,5 +16,6 @@ ggplot(r_df, aes(x = x, y = y)) +
   theme(
     plot.background = element_rect(fill = "grey96", color = NA),
     plot.margin = margin(5, 5, 5, 5)
-  ) +
-  ggsave(here::here("swirl", "swirl.png"), dpi = 320, width = 6, height = 6)
+  ) 
+
+ggsave(here::here("swirl", "swirl.png"), dpi = 320, width = 6, height = 6)

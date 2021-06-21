@@ -52,6 +52,7 @@ ggplot(img_df) +
   # coord_fixed(expand = FALSE) +
   theme_void() +
   theme(legend.position = "none",
-        plot.background = element_rect(fill = col_bg, color = NA)) +
-  ggsave("portraits/portraits bspline/plots/georgios-bspl.png", width = 8, height = 8 / img_ratio)
+        plot.background = element_rect(fill = col_bg, color = NA)) 
+
+ggsave("portraits/portraits bspline/plots/georgios-bspl.png", width = 8, height = 8 / img_ratio)
 

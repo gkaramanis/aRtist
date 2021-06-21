@@ -23,6 +23,7 @@ ggplot(rows_df, aes(x, y^2, group = xn)) +
     plot.background = element_rect(fill = "grey15", color = NA),
     plot.margin = margin(0, 20, 0, 20)
     
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-19", "2021-19.png"), dpi = 320, width = 12, height = 15)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-19", "2021-19.png"), dpi = 320, width = 12, height = 15)
 

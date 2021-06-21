@@ -33,6 +33,7 @@ ggplot() +
   ) +
   coord_fixed(ratio = 0.67, xlim = c(0, 1), expand = FALSE, clip = "off") +
   theme_void() +
-  theme(plot.margin = margin(-2, -2, -2, -2)) +
-  ggsave(here::here("collage", "collage-bars", paste0("collage-bars", "-", round(runif(1, 1, 10000)), ".png")), dpi = 320, width = 6, height = 4)
+  theme(plot.margin = margin(-2, -2, -2, -2)) 
+
+ggsave(here::here("collage", "collage-bars", paste0("collage-bars", "-", round(runif(1, 1, 10000)), ".png")), dpi = 320, width = 6, height = 4)
   

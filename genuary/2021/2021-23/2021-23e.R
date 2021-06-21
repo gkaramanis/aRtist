@@ -51,6 +51,7 @@ ggplot(img_df) +
     legend.position = "none",
     strip.text = element_blank(),
     plot.background = element_rect(fill = "grey20", color = NA)
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-23", "2021-23e.png"), dpi = 320, width = 7, height = 7.7)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-23", "2021-23e.png"), dpi = 320, width = 7, height = 7.7)
              

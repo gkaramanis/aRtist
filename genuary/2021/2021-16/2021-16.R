@@ -25,6 +25,7 @@ ggplot(circ) +
   theme(
     legend.position = "none",
     plot.background = element_rect(fill = "#b4a2d5", color = NA)
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-16", "2021-16.png"), dpi = 320, width = 9, height = 9)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-16", "2021-16.png"), dpi = 320, width = 9, height = 9)
 

@@ -45,5 +45,6 @@ ggplot(img_df) +
   # scale_size_continuous(range = c(0, 1)) +
   coord_fixed(expand = FALSE) +
   theme_void() +
-  theme(legend.position = "none", plot.background = element_rect(fill = col_bg, color = NA)) +
-  ggsave("portraits/portraits regular polygons/plots/keanu-poly2.png", width = 8, height = 8 / img_ratio)
+  theme(legend.position = "none", plot.background = element_rect(fill = col_bg, color = NA)) 
+
+ggsave("portraits/portraits regular polygons/plots/keanu-poly2.png", width = 8, height = 8 / img_ratio)

@@ -37,5 +37,6 @@ ggplot(pnt_splines) +
   theme_void() +
   theme(
     legend.position = "none"
-  ) +
-  ggsave(here::here("flow", "plots", paste0("blob-", format(Sys.time(), "%Y%m%d_%H%M%S"), ".png")), dpi = 320, width = 7, height = 7)
+  ) 
+
+ggsave(here::here("flow", "plots", paste0("blob-", format(Sys.time(), "%Y%m%d_%H%M%S"), ".png")), dpi = 320, width = 7, height = 7)

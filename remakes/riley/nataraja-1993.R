@@ -41,6 +41,7 @@ ggplot(nataraja) +
   theme(
     legend.position = "none",
     plot.margin = margin(2, 2, 2, 2)
-    ) +
-  ggsave(here::here("remakes", "riley", "nataraja-1993.png"), dpi = 320, width = 6.9, height = 5)
+    ) 
+
+ggsave(here::here("remakes", "riley", "nataraja-1993.png"), dpi = 320, width = 6.9, height = 5)
 

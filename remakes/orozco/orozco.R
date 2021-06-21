@@ -55,5 +55,6 @@ ggplot(discs_final) +
   theme(
     plot.background = element_rect(fill = "#D6D6D4", color = NA),
     plot.margin = margin(0, -50, 0, -50)
-  ) +
-  ggsave(here::here("remakes", "orozco", "plots", "orozco.png"), dpi = 320, height = 8, width = 5.65)
+  ) 
+
+ggsave(here::here("remakes", "orozco", "plots", "orozco.png"), dpi = 320, height = 8, width = 5.65)

@@ -42,5 +42,6 @@ ggplot(viv_notes) +
     plot.margin = margin(20, 10, 20, 10),
     panel.spacing = unit(0, "lines"),
     strip.text = element_text(margin = margin(0, 0, 5, 0))
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-28", "2021-28.png"), dpi = 320, width = 12, height = 6.418)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-28", "2021-28.png"), dpi = 320, width = 12, height = 6.418)

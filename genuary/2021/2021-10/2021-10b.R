@@ -17,6 +17,7 @@ ggtree(trees, ladderize = TRUE, branch.length = "none", layout = "circular",
   theme(
     strip.text = element_blank(),
     plot.background = element_rect(fill = "grey97", color = NA)
-  ) +
-  ggsave(here::here("genuary", "2021", "2021-10", "2021-10b.png"), dpi = 320, width = 7, height = 7)
+  ) 
+
+ggsave(here::here("genuary", "2021", "2021-10", "2021-10b.png"), dpi = 320, width = 7, height = 7)
 
