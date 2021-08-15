@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+<script src="https://unpkg.com/matter-js@0.17.1/build/matter.min.js"></script>
+</head>
+
+<body>
+<script>
+// module aliases
+var Engine = Matter.Engine,
+    Render = Matter.Render,
+    Runner = Matter.Runner,
+    Bodies = Matter.Bodies,
+    Composite = Matter.Composite;
+	
+// create an engine
+var engine = Engine.create();
+engine.world.gravity.y = 0.97;
+
+// create a renderer
+var render = Render.create({
+    element: document.body,
+    engine: engine,
+	options: {
+		wireframes: false,
+		background: '#e5e5e3',
+		showBounds: false,
+        showVelocity: false,
+        showCollisions: false
+		}
+});
+
+// create boxes and a ground
+var boxA = Bodies.rectangle(375, 170, 100, 100, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxB = Bodies.rectangle(373, 268, 96, 96, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxC = Bodies.rectangle(467, 270, 92, 92, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxD = Bodies.rectangle(469, 181, 87, 87, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxE = Bodies.rectangle(467, 95, 83, 83, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxF = Bodies.rectangle(386, 81, 79, 79, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxG = Bodies.rectangle(309, 83, 74, 74, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxH = Bodies.rectangle(290, 155, 70, 70, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxI = Bodies.rectangle(292, 223, 66, 66, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxJ = Bodies.rectangle(294, 287, 62, 62, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxK = Bodies.rectangle(296, 347, 58, 58, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxL = Bodies.rectangle(352, 342, 53, 53, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxM = Bodies.rectangle(403, 340, 49, 49, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxN = Bodies.rectangle(450, 338, 45, 45, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxO = Bodies.rectangle(492, 336, 40, 40, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxP = Bodies.rectangle(531, 334, 36, 36, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxQ = Bodies.rectangle(528, 300, 32, 32, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxR = Bodies.rectangle(526, 270, 28, 28, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxS = Bodies.rectangle(524, 244, 24, 24, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxT = Bodies.rectangle(522, 223, 19, 19, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+var boxU = Bodies.rectangle(520, 206, 15, 15, {
+	render: {
+		lineWidth: 12,
+		fillStyle: 'transparent',
+		strokeStyle: '#1a1b1d'
+	}
+});
+
+var ground = Bodies.rectangle(400, 610, 500, 60, { isStatic: true });
+
+// add all of the bodies to the world
+Composite.add(engine.world, [boxA, boxB, boxC, boxD, boxE, boxF, boxG, boxH, boxI, boxJ, boxK, boxL, boxM, boxN, boxO, boxP, boxQ, boxR, boxS, boxT, boxU, ground]);
+
+// run the renderer
+Render.run(render);
+
+// create runner
+var runner = Runner.create();
+
+// run the engine on click
+window.onclick = runRunner;
+  
+  function runRunner() {
+    Runner.run(runner, engine);
+  }
+</script>
+
+</body>
+</html>
