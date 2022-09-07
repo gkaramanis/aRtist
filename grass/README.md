@@ -1,3 +1,3 @@
-![](grass.png)
+![](green.png)
 ![](water.png)
 ![](red.png)
