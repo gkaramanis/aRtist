@@ -1,8 +1,4 @@
-A Shiny app to create plots like this:  
-
-![](ellipses.jpeg)  
-  
-  
+A Shiny app to create plots with ellipses
   
 Screenshot:  
 ![](ellipses-screenshot.png)
