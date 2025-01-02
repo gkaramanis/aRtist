@@ -7,7 +7,7 @@ gg_record(here::here("genuary/genuary-temp/"), width = 8, height = 8, dpi = 320)
 l <- 5
 r <- 0.4
 
-circles <- expand_grid(x = 1:l, y = 1:l) %>% 
+spirals <- expand_grid(x = 1:l, y = 1:l) %>% 
   mutate(id = cur_group_id(), .by = c(x, y)) %>% 
   crossing(t = seq(0, 4*pi, length.out = 300)) %>% 
   mutate(
@@ -17,7 +17,7 @@ circles <- expand_grid(x = 1:l, y = 1:l) %>%
   ) %>% 
   filter(between(xx, 1, l) & between(yy, 1, l))
 
-ggplot(circles) +
+ggplot(spirals) +
   geom_segment(aes(x = xx, y = y, yend = yy), linewidth = 1, color = "grey97", alpha = 0.5) +
   coord_fixed() +
   theme_void() +
