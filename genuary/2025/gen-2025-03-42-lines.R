@@ -3,8 +3,6 @@ library(camcorder)
 
 gg_record(here::here("genuary/genuary-temp/"), width = 8, height = 8, dpi = 320)
 
-set.seed(99)
-
 lines_df <- read_lines(here::here("genuary/2025/gen-2025-03-42-lines.R")) %>% 
   str_split("\n") %>% 
   unlist() %>% 
